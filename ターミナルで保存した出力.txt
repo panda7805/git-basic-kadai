@@ -1,0 +1,67 @@
+Last login: Sun Jul 23 11:00:00 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) nishiokenjinoMacBook-puro:~ nishiokenji$ pwd
+/Users/nishiokenji
+(base) nishiokenjinoMacBook-puro:~ nishiokenji$ cdgit_challenge
+-bash: cdgit_challenge: command not found
+(base) nishiokenjinoMacBook-puro:~ nishiokenji$ cd git_challenge
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git_challenge
+-bash: git_challenge: command not found
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ echo “hello,world”<"hello_world.txt"
+-bash: hello_world.txt: No such file or directory
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ echo “hello,world” > “hello_world.txt”
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git add hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git commit -m “１回目のコミット”
+[master 6888e1f] “１回目のコミット”
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	"\342\200\234hello_world.txt\342\200\235"
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ echo “こんにちは、世界” >> “hello_world.txt”
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git add hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git commit -m “日本語訳を追記”
+[master 778189e] “日本語訳を追記”
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ log -n2
+log: unrecognized option `-n2'
+usage:
+    log <command>
+
+global options:
+    -?, --help
+    -q, --quiet
+    -v, --verbose
+
+commands:
+    collect         gather system logs into a log archive
+    config          view/change logging system settings
+    erase           delete system logging data
+    show            view/search system logs
+    stream          watch live system logs
+    stats           show system logging statistics
+
+further help:
+    log help <command>
+    log help predicates
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git log -n2
+commit 778189e1424bfad743c558ad5a484aaa9aec6bcb (HEAD -> master)
+Author: “パンダ7805” <“kn7805@icloud.com”>
+Date:   Sun Jul 23 11:23:46 2023 +0900
+
+    “日本語訳を追記”
+
+commit 6888e1f219ba8e1ba3dddfc61f18a3728c2b18b8
+Author: “パンダ7805” <“kn7805@icloud.com”>
+Date:   Sun Jul 23 11:20:24 2023 +0900
+
+    “１回目のコミット”
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ 
