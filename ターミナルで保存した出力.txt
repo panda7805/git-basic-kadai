@@ -32,30 +32,6 @@ nothing added to commit but untracked files present (use "git add" to track)
  1 file changed, 2 insertions(+)
  create mode 100644 hello_world.txt
 (base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ log -n2
-log: unrecognized option `-n2'
-usage:
-    log <command>
-
-global options:
-    -?, --help
-    -q, --quiet
-    -v, --verbose
-
-commands:
-    collect         gather system logs into a log archive
-    config          view/change logging system settings
-    erase           delete system logging data
-    show            view/search system logs
-    stream          watch live system logs
-    stats           show system logging statistics
-
-further help:
-    log help <command>
-    log help predicates
-(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git log -n2
-commit 778189e1424bfad743c558ad5a484aaa9aec6bcb (HEAD -> master)
-Author: “パンダ7805” <“kn7805@icloud.com”>
-Date:   Sun Jul 23 11:23:46 2023 +0900
 
     “日本語訳を追記”
 
