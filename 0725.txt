@@ -35,16 +35,3 @@ Author: “パンダ7805” <“kn7805@icloud.com”>
 Date:   Tue Jul 25 23:17:17 2023 +0900
 
     “最初のコミット”
-
-commit 778189e1424bfad743c558ad5a484aaa9aec6bcb
-Author: “パンダ7805” <“kn7805@icloud.com”>
-Date:   Sun Jul 23 11:23:46 2023 +0900
-
-    “日本語訳を追記”
-
-commit 6888e1f219ba8e1ba3dddfc61f18a3728c2b18b8
-Author: “パンダ7805” <“kn7805@icloud.com”>
-Date:   Sun Jul 23 11:20:24 2023 +0900
-
-    “１回目のコミット”
-:
