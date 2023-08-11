@@ -1,0 +1,35 @@
+Last login: Fri Aug 11 21:38:57 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) nishiokenjinoMacBook-puro:~ nishiokenji$ mkdir git_challenge
+(base) nishiokenjinoMacBook-puro:~ nishiokenji$ cd git_challenge
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ pwd
+/Users/nishiokenji/git_challenge
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git init
+Initialized empty Git repository in /Users/nishiokenji/git_challenge/.git/
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ echo hello,world >> hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git add hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git commit -m “hello_world.txtを追加”
+[master (root-commit) 552dce8] “hello_world.txtを追加”
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git status
+On branch master
+nothing to commit, working tree clean
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git add hello_world.txt
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git commit -m “日本語訳を追加”
+[master 41e2b03] “日本語訳を追加”
+ 1 file changed, 1 insertion(+)
+(base) nishiokenjinoMacBook-puro:git_challenge nishiokenji$ git log --oneline
+41e2b03 (HEAD -> master) “日本語訳を追加”
+552dce8 “hello_world.txtを追加”
